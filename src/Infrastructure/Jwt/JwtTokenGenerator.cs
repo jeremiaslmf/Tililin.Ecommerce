@@ -28,10 +28,11 @@ public class JwtTokenGenerator(IConfiguration configuration) : IJwtTokenGenerato
             new Claim("usuarioId", usuario.PublicId.ToString()),
         ];
 
-        foreach (var role in usuario.Roles)
+        foreach (var role in usuario.RoleList)
         {
-            claims.Add(new Claim(ClaimTypes.Role, role.ToString()));
+            claims.Add(new Claim(ClaimTypes.Role, role));
         }
+
 
         var credentials = new SigningCredentials(
             new SymmetricSecurityKey(key),
