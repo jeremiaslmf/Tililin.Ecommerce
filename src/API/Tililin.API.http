@@ -1,0 +1,6 @@
+@Tililin.API_HostAddress = http://localhost:5213
+
+GET {{Tililin.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

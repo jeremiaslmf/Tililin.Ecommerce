@@ -1,0 +1,38 @@
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+build/
+out/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio 2017+
+.vs/
+.vscode/
+
+# Dotnet artifacts
+bin/
+obj/
+TestResults/
+*.dbmdl
+*.pdb
+
+# Secrets
+appsettings.*.json
+!appsettings.json
+
+# NUGET
+*.nupkg
+.nuget/
+packages/
+*.snupkg
+
+# OS Files
+.DS_Store
+Thumbs.db
